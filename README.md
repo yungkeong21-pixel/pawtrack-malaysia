@@ -24,6 +24,7 @@ Open `http://localhost:8080`.
 - Four-tab mobile navigation with a health dashboard and weight trend chart
 - Repeating medication schedules with calendar reminders
 - Local medical file storage for vaccine cards, lab results, prescriptions, and PDFs
+- Full local backup and restore, including pet photos and medical files
 
 ## Roadmap
 
