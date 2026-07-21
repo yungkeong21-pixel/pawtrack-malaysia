@@ -39,3 +39,11 @@ Open `http://localhost:8080`.
 - Cloud database and image storage, with costs reviewed before enabling any paid service
 
 The community feature is intentionally deferred until the core health tracker is stable and the privacy, moderation, and operating-cost requirements are ready.
+
+### Future exploration: pet location
+
+- Explore AirTag / Apple Find My-compatible pet location experiences
+- Evaluate Android-compatible trackers and cross-platform alternatives
+- Confirm platform permissions, owner consent, location privacy, battery expectations, and technical feasibility before development
+
+Location tracking is a long-term research item, not a committed feature. No paid hardware or service will be selected without reviewing the cost first.
