@@ -22,6 +22,8 @@ Open `http://localhost:8080`.
 - Offline cache and installable PWA manifest
 - Edit/delete health records, reminders, nearby-vet search, daily tips, dark mode, and printable vet summary
 - Four-tab mobile navigation with a health dashboard and weight trend chart
+- Repeating medication schedules with calendar reminders
+- Local medical file storage for vaccine cards, lab results, prescriptions, and PDFs
 
 ## Roadmap
 
