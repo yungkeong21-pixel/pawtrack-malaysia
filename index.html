@@ -95,5 +95,9 @@ const editPetBeforePhoto=editPet;editPet=function(id){editPetBeforePhoto(id);con
 document.querySelector('#petFormEl').onsubmit=e=>{e.preventDefault();const f=new FormData(e.target),existing=f.get('id'),payload={name:f.get('name'),species:f.get('species'),birth:f.get('birth'),photo:safePhoto(pendingPhoto)};if(existing){const p=data.pets.find(x=>x.id===existing);Object.assign(p,payload)}else{const id=crypto.randomUUID();data.pets.push({id,...payload});active=id}try{save()}catch(error){alert(photoText('storageFull'));return}e.target.reset();pendingPhoto='';shut('petForm')};
 const renderBeforePhotos=render;render=function(){renderBeforePhotos();document.querySelectorAll('#pets [data-pet]').forEach(button=>{const p=data.pets.find(x=>x.id===button.dataset.pet),avatar=button.querySelector('.avatar'),photo=safePhoto(p?.photo);if(photo)avatar.innerHTML=`<img src="${photo}" alt="">`})};
 const applyLanguageBeforePhotos=applyLanguage;applyLanguage=function(){applyLanguageBeforePhotos();document.querySelectorAll('[data-photo]').forEach(x=>x.textContent=photoText(x.dataset.photo));showPhotoPreview()};
+Object.assign(ui.zh,{nearbyDesc:'在 Google Maps 搜索附近兽医'});
+Object.assign(ui.en,{nearbyDesc:'Search for nearby vets in Google Maps'});
+Object.assign(ui.ms,{nearbyDesc:'Cari vet berdekatan di Google Maps'});
+document.querySelector('#findVet').onclick=()=>{window.location.href='https://www.google.com/maps/search/?api=1&query=veterinary%20clinic%20near%20me'};
 applyLanguage();render();
 </script></body></html>
