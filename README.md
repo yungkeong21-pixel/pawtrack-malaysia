@@ -21,6 +21,7 @@ Open `http://localhost:8080`.
 - Chinese, English, and Bahasa Malaysia UI
 - Offline cache and installable PWA manifest
 - Edit/delete health records, reminders, nearby-vet search, daily tips, dark mode, and printable vet summary
+- Four-tab mobile navigation with a health dashboard and weight trend chart
 
 ## Roadmap
 
